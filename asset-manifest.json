@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/demonym-api/static/css/main.f3d33a54.chunk.css",
-    "main.js": "/demonym-api/static/js/main.947d8af7.chunk.js",
-    "main.js.map": "/demonym-api/static/js/main.947d8af7.chunk.js.map",
+    "main.css": "/demonym-api/static/css/main.cdd5fe86.chunk.css",
+    "main.js": "/demonym-api/static/js/main.7d9f7ea2.chunk.js",
+    "main.js.map": "/demonym-api/static/js/main.7d9f7ea2.chunk.js.map",
     "runtime-main.js": "/demonym-api/static/js/runtime-main.7b075eed.js",
     "runtime-main.js.map": "/demonym-api/static/js/runtime-main.7b075eed.js.map",
     "static/js/2.e5aff265.chunk.js": "/demonym-api/static/js/2.e5aff265.chunk.js",
     "static/js/2.e5aff265.chunk.js.map": "/demonym-api/static/js/2.e5aff265.chunk.js.map",
     "index.html": "/demonym-api/index.html",
-    "static/css/main.f3d33a54.chunk.css.map": "/demonym-api/static/css/main.f3d33a54.chunk.css.map",
+    "static/css/main.cdd5fe86.chunk.css.map": "/demonym-api/static/css/main.cdd5fe86.chunk.css.map",
     "static/js/2.e5aff265.chunk.js.LICENSE.txt": "/demonym-api/static/js/2.e5aff265.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7b075eed.js",
     "static/js/2.e5aff265.chunk.js",
-    "static/css/main.f3d33a54.chunk.css",
-    "static/js/main.947d8af7.chunk.js"
+    "static/css/main.cdd5fe86.chunk.css",
+    "static/js/main.7d9f7ea2.chunk.js"
   ]
 }
