@@ -1,0 +1,12 @@
+.demonym_app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: flex; */
+  border: 5px teal solid;
+  border-radius: 8px;
+  padding: 30px;
+  font-size: 3em;
+  text-align: center;
+}

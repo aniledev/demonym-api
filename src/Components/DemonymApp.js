@@ -3,8 +3,7 @@ import CountrySelector from "./CountrySelector";
 import Demonym from "./Demonym";
 import "../Styles/DemonymApp.css";
 
-export default class DemonymApp extends Component {
-  //initialize state using a constructor
+class DemonymApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,28 +12,21 @@ export default class DemonymApp extends Component {
     };
   }
 
-  setSelected(selected) {
-    this.setState({
-      selected,
-    });
-  }
-
   componentDidMount() {
-    fetch("https://country.register.gov.uk/recordsWRONG.json?page-size=5000")
+    fetch("https://country.register.gov.uk/records.json?page-size=5000")
       .then((response) => {
-        // check if response is ok
-        console.log("About to check for errors");
         if (!response.ok) {
-          console.log("An error did occur, let's throw an error.");
-          throw new Error("Something went wrong"); // throw an error
+          console.log(response);
+          throw new Error("Something went wrong, please try again later.");
         }
-        return response; // ok, so just continue
+        return response;
       })
       .then((response) => response.json())
       .then((data) => {
         const countries = Object.keys(data).map((key) => data[key].item[0]);
         this.setState({
           countries,
+          error: null,
         });
       })
       .catch((err) => {
@@ -42,6 +34,12 @@ export default class DemonymApp extends Component {
           error: err.message,
         });
       });
+  }
+
+  setSelected(selected) {
+    this.setState({
+      selected,
+    });
   }
 
   render() {
@@ -72,3 +70,5 @@ export default class DemonymApp extends Component {
     );
   }
 }
+
+export default DemonymApp;

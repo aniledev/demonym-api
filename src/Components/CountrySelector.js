@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../Styles/CountrySelector.css";
 
-export default class CountrySelector extends Component {
+class CountrySelector extends Component {
   changeSelection(value) {
     if (value === "None") {
       this.props.changeHandler(null);
@@ -20,9 +20,8 @@ export default class CountrySelector extends Component {
         {country.name}
       </option>
     ));
-
     return (
-      <div className="CountrySelector">
+      <div className="country_selector">
         <form>
           <label htmlFor="country">Select a country:</label>
           <select
@@ -39,6 +38,4 @@ export default class CountrySelector extends Component {
   }
 }
 
-CountrySelector.defaultProps = {
-  countries: [],
-};
+export default CountrySelector;
