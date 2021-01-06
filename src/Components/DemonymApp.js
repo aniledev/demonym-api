@@ -26,12 +26,19 @@ export default class DemonymApp extends Component {
   }
 
   render() {
+    const demon = this.state.selected ? (
+      <Demonym
+        name={this.state.selected["citizen-names"]}
+        country={this.state.selected.name}
+      />
+    ) : (
+      <div className="demonym_app__placeholder">Select a country above</div>
+    );
+
     return (
-      <div className="DemonymApp">
-        <CountrySelector
-          countries={[{ name: "Barbados" }, { name: "Bahrain" }]}
-        />
-        <Demonym name="Barbadian" country="Barbados" />
+      <div className="demonym_app">
+        <CountrySelector countries={this.state.countries} />
+        {demon}
       </div>
     );
   }
