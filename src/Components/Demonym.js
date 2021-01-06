@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Demonym extends Component {
-  render() {
-    return <div className="Demonym"></div>;
-  }
+export default function Demonym(props) {
+  return (
+    <div className="Demonym">
+      A {props.name} comes from {props.country}
+    </div>
+  );
 }
